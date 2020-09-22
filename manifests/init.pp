@@ -13,7 +13,6 @@ class elk {
     source => 'puppet:///modules/elk/beats.conf',
   }
 
-
   include ::java
   class { 'elasticsearch':
     jvm_options => ['-Xms256m','-Xmx256m']  
@@ -25,11 +24,7 @@ class elk {
       'server.host' => '0.0.0.0'
     }
   }
-<<<<<<< HEAD
-
 
   include elk::filebeat
-=======
->>>>>>> 7aa723f11b96978a93d247d1473823ab8950fbe6
 }
 
