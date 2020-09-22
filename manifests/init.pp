@@ -25,8 +25,11 @@ class elk {
       'server.host' => '0.0.0.0'
     }
   }
+<<<<<<< HEAD
 
 
   include elk::filebeat
+=======
+>>>>>>> 7aa723f11b96978a93d247d1473823ab8950fbe6
 }
 
